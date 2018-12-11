@@ -1,22 +1,22 @@
 
 
-Which algorithm did you use to match free text with questions in the repository? What were the reasons to select the algorithm?
+###Which algorithm did you use to match free text with questions in the repository? What were the reasons to select the algorithm?
 1. lemmatization of corpus
 2. Tf-idf is calculated
 3. Cosine similarity is calculated between input question and all questions in corpus
 4. Answer for corresponding Question with highest similarity is the returned
 
-Reason for selecting above method are 
+###Reason for selecting above method are 
 1. powerful algorithm 
 2. Fast development 
 3. decent accuracy
 
 
-How would you measure accuracy?
+###How would you measure accuracy?
 1. precision, recall and F1 score is used to measure accuracy whether the algorithm predicted to answer correct or not
 
 
-How would you improve accuracy?
+###How would you improve accuracy?
 
 1. using tf-idf with weighted word2vec
 2. pre-processing and taking WH-Questions(what, how , when, etc) into consideration
@@ -27,7 +27,7 @@ How would you improve accuracy?
 
 
 
-How would you deal with multiple users speaking with the same bot?
+###How would you deal with multiple users speaking with the same bot?
 
 1. Multiple user's will have multiple sessions to talk to same bot
 2. Asynchronosity will help with seamless service to users
@@ -38,8 +38,8 @@ python scrape_faq.py will scrape all the questions and answers into csv in ./dat
 
 Go to python terminal and follow below code:
 
->>> from chatbot import Chatbot
->>> faq = Chatbot()
+>>> from chatbot import Chatbot \n
+>>> faq = Chatbot() \n
 >>> faq.get_answer('How will my application be evaluated?')
 
 
